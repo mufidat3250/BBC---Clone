@@ -1,0 +1,153 @@
+html body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+h1 h2 h3 h4 h5 h6 span p {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+   
+
+}
+
+.header .header-large-screen{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 0.7rem;
+}
+.header .header-mobile{
+    display: none;
+}
+.nav-wrapper{
+    display: flex;
+    gap: 1.5rem;
+}
+.logo-signup-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    width:25%;
+}
+
+.logo-signup-wrapper .logo{
+display: flex;
+font-family: Arial, Helvetica, sans-serif;
+gap: 0.5rem;
+cursor: pointer;
+}
+.logo-signup-wrapper .logo div{
+    background-color: white;    
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.2rem  0.5rem;
+}
+.user{
+    height: 2rem;
+}
+.logo-signup-wrapper .signup{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    
+}
+.signup:hover{
+    border-bottom: 2px solid blue;
+    transition: ease-in 1s;
+}
+
+.logo-signup-wrapper .signup-img{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.line{
+    background-color: lightgray;
+    height: 2rem;
+    width: 1px;
+}
+
+.nav-wrapper .nav-menus{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav-wrapper .nav-menus p{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+ }
+
+
+.search-line{
+    width: 24px;
+}
+.three-dot{
+    cursor: pointer;
+}
+.search-line{
+    cursor: pointer;
+}
+
+.sub-nav{
+
+}
+.nav-wrapper .logo-signup-wrapper{
+
+}
+.nav-wrapper .logo-signup-wrapper .logo{
+    display: flex;
+}
+
+@media (max-width:879px) {
+    .nav-wrapper{
+        display: flex;
+    }
+    .nav-wrapper .nav-menus{
+
+    }
+   .nav-menus  p:nth-child(n+5){
+    background-color: green;
+    display: none;
+    }
+    .nav-wrapper{
+        display: flex;
+        gap: 3rem;
+    }
+    .nav-menus{
+        margin-left: 1.5rem;
+    }
+}
+@media (max-width:700px) {
+    .header .header-large-screen{
+        display: none;
+    }
+    .logo-signup-wrapper{
+        width: fit-content;
+    }
+    .header .header-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 0.7rem;
+    }
+    .menu-icons{
+        display: flex;
+        gap: 0.5rem;
+    }
+}
