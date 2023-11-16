@@ -8,7 +8,7 @@ html body{
 *{
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6,span, p {
+h1, h2, h3, h4, h5, h6,span, p , ul, li{
     margin: 0;
     padding: 0;
 }
@@ -426,6 +426,123 @@ cursor: pointer;
     grid-template-columns: 2fr 1fr;
 }
 
+.latest-business{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+.latest-business h5{
+    background-color: red;
+    padding: 0.6rem;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.latest-business ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.latest-business ul li{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color:#2f2f2f;
+    color: #d3d3d3;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.latest-business ul li:hover{
+    color: white;
+
+}
+.latest-business ul li span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.3rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    background-color: red;
+}
+.latest-business ul li:nth-child(2n+2){
+    background-color: #363636;
+}
+
+.editor-content-wrapper{
+    display: flex;
+}
+
+.editor-content-wrapper .editor-content{
+
+}
+.editor-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: lightgray;
+    width: 100%;
+}
+.editor-img{
+    width: 100%;
+}
+
+
+
+footer{
+    background-color: #4c4c4c;
+    color: white;
+    padding: 1rem 1rem 0.5rem;
+}
+footer h2{
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+footer .menu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(210, 196, 196);
+}
+footer .menu div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    border-right: 0.5px solid rgb(132, 125, 125);    
+}
+footer .menu div p{
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    cursor: pointer;
+}
+
+footer .menu div p:hover{
+    width: fit-content;
+    border-bottom: 1px solid rgb(132, 125,125);
+}
+
+footer .term-of-use{
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+footer .term-of-use p{
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+}
+footer .term-of-use p:hover{
+    border-bottom: 1px solid lightgray;
+}
+.copy-write{
+    font-size: 12px;
+}
+
 @media (max-width:879px) {
     .nav-wrapper{
         display: flex;
@@ -472,6 +589,11 @@ cursor: pointer;
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
+    }
+    .latest-business ul li{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        align-items: center;
     }
 
 }
